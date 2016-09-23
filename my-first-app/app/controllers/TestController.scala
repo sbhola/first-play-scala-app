@@ -13,7 +13,7 @@ import play.api.libs.functional.syntax._
   * Created by sbhola on 9/21/2016.
   */
 @Singleton
-class TestController extends Controller{
+class TestController @Inject()extends Controller{
 
   def testMethod = Action {
     Ok("hello world my first test method.")

@@ -17,3 +17,5 @@ GET /test                           controllers.TestController.testMethod
 
 
 POST  /places                      controllers.TestController.savePlace
+
+POST /applyMarkups                 controllers.HotelsController.applyMarkups
