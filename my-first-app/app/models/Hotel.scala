@@ -1,6 +1,8 @@
 package models
 
-case class Hotel(id: String, name : String,geocode : GeoCode,address : Address, policies: Policy)
+case class HotelsRequest(id:String, hotels:Array[Hotel])
+
+case class Hotel(id: String, name : String,geocode : GeoCode,address : Address, policies: Array[Policy])
 
 case class GeoCode(lat: Double, long: Double)
 
